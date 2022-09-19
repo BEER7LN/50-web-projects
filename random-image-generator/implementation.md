@@ -1,0 +1,4 @@
+- 获取随机图片
+  - 获取随机数：Math.floor(Math.random() * 10) + 300
+  - 获取随机参数：`${getRandomNr()}x${getRandomNr()}`
+  - URL：img.src = `${unsplashURL}${getRandomSize()}`

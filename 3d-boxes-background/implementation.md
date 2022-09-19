@@ -1,0 +1,6 @@
+- 子模块
+  - 创建子模块：createElement
+  - 加入子模块：appendChild
+  - 位置：box.style.backgroundPosition = `${-j * 125}px ${-i * 125}px`
+- 状态切换
+  - boxesContainer.classList.toggle('big')

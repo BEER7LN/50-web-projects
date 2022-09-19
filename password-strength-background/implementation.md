@@ -1,0 +1,2 @@
+- 模糊背景
+  - background.style.filter = `blur(${blurValue}px)`

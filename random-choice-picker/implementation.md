@@ -1,0 +1,5 @@
+- 生成多个tags
+  - 数组存放：input.split(',').filter(tag => tag.trim() !== '').map(tag => tag.trim())
+  - 每个tag再创建元素，加入DOM
+- 高亮
+  - 定时器，多次随机选tag，再改变格式

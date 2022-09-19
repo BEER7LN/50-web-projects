@@ -1,0 +1,9 @@
+- 图片切换
+  - flex 弹性容器，改变占比
+    - flexbox 是一种一维的布局，是因为一个 flexbox 一次只能处理一个维度上的元素布局，一行或者一列
+    -  flex-basis：定义了该元素的空间大小（flex 容器里除了元素所占的空间以外的富余空间就是可用空间 available space）
+    -  flex-grow：可以按比例分配空间
+    -  flex-shrink：如果我们的容器中没有足够排列 flex 元素的空间，那么可以把 flex 元素flex-shrink属性设置为正整数来缩小它所占空间到flex-basis以下
+    -  flex 简写形式允许你把三个数值按这个顺序书写 — flex-grow，flex-shrink，flex-basis
+- 文字显示/隐藏切换
+  - opacity：不透明度

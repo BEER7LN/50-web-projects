@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META元素通常用于指定网页的描述，也就是元数据 -->
+    <!-- 字符集声明，告诉文档使用哪种字符编码 -->
+    <meta charset="UTF-8" />
+    <!-- name 和 content 属性可以一起使用，以名 - 值对的方式给文档提供元数据，其中 name 作为元数据的名称，content 作为元数据的值 -->
+    <!-- viewport 为viewport（视口）的初始大小提供指示 -->
+    <!-- width 定义 viewport 的宽度，device-width即为设备屏幕分辨率的宽度值-->
+    <!-- initial-scale 定义设备宽度（宽度和高度中更小的那个：如果是纵向屏幕，就是 device-width，如果是横向屏幕，就是 device-height）与 viewport 大小之间的缩放比例。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- rel(relationship)是关联的意思，关联的是一个样式表(stylesheet)文档，它表示这个link在文档初始化时将被使用 -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- title 元素定义文档的标题，显示在浏览器的标题栏或标签页上。它只应该包含文本，若是包含有标签，则它包含的任何标签都将被忽略。 -->
+    <title>Expanding Cards</title>
+  </head>
+  <body>
+    <!-- div 元素是一个通用型的内容容器，在不使用CSS的情况下，其对内容或布局没有任何影响 -->
+    <!-- 使用class定义容器名称，便于针对性地修改内容的格式 -->
+    <div class="container">
+      <div class="panel active" style="background-image: url('https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
+        <h3>Explore The World</h3>
+      </div>
+      <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1572276596237-5db2c3e16c5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
+        <h3>Wild Forest</h3>
+      </div>
+      <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80')">
+        <h3>Sunny Beach</h3>
+      </div>
+      <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1551009175-8a68da93d5f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80')">
+        <h3>City on Winter</h3>
+      </div>
+      <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
+        <h3>Mountains - Clouds</h3>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

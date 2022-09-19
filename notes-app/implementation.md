@@ -1,0 +1,3 @@
+- 本地存储
+  - 输出：localStorage.getItem('notes')
+  - 写入：setItem('notes', JSON.stringify(notes))

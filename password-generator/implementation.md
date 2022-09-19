@@ -1,0 +1,7 @@
+- 复制到剪切板
+  - 创建一个textarea,textarea.value是要复制的值
+  - 选中内容textarea.select()
+  - 复制：document.execCommand('copy')
+- 生成密码
+  - 获取要求数组
+  - 用对象保存函数名，再调用函数

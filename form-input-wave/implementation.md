@@ -1,0 +1,4 @@
+- 提示文字动画效果
+  - 绝对定位重叠方式
+  - 动画设置
+    - map((letter, idx) => `<span style="transition-delay:${idx * 50}ms">${letter}</span>`)   js设置每个字母不同的时间

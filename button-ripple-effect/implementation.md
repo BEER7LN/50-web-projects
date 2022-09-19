@@ -1,0 +1,5 @@
+- 动画
+  - 获取焦点坐标 ：const xInside = x - buttonLeft
+  - 创建元素并插入dom中 ：this.appendChild(circle)
+  - 元素是具有动画的
+  - 元素消失 ：setTimeout(() => circle.remove(), 500)

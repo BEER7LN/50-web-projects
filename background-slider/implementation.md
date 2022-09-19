@@ -1,0 +1,9 @@
+- 图片切换
+  - 背景切换
+    - body.style.backgroundImage = slides[activeSlide].style.backgroundImage
+    - 由于body图片和slide图片的z-index不同 + slide图片不会缩放而是截取，所以两部分衔接
+- 明暗效果
+    - slide.classList.remove('active'))/slides[activeSlide].classList.add('active')
+    - 改变选中图片/其它图片的样式
+    - 具体就是改变透明度  opacity: 0
+    - 由于body图片和slide图片的z-index不同所以可以实现明暗效果

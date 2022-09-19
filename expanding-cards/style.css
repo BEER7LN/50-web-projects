@@ -1,0 +1,93 @@
+/* 用于从其他样式表导入样式规则。 */
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+/* * 选择器选择所有元素 */
+* {
+  /* box-sizing 属性定义了如何计算一个元素的总宽度和总高度 */
+  /* border-box 告诉浏览器：你想要设置的边框和内边距的值是包含在 width 内的。也就是说，如果你将一个元素的 width 设为 100px，那么这 100px 会包含它的 border 和 padding，内容区的实际宽度是 width 减去 (border + padding) 的值。大多数情况下，这使得我们更容易地设定一个元素的宽高。 */
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family 允许您通过给定一个有先后顺序的，由字体名或者字体族名组成的列表来为选定的元素设置字体 */
+  /* 最后加一个sans-serif,这样如果所列出的字体都不能用，则默认的sans-serif字体能保证调用 */
+  font-family: 'Muli', sans-serif;
+  /* display 属性可以设置元素的内部和外部显示类型 display types。元素的外部显示类型 outer display types 将决定该元素在流式布局中的表现（块级或内联元素）；元素的内部显示类型 inner display types 可以控制其子元素的布局（例如：flow layout，grid 或 flex）。 */
+  /* flex 弹性容器 */
+  display: flex;
+  /* align-items 属性定义flex子项的对齐方式 */
+  /* 元素位于容器的中心 */
+  align-items: center;
+  /* justify-content 用于设置或检索弹性盒子元素在主轴（横轴）方向上的对齐方式 */
+  /* 居中排列 */
+  justify-content: center;
+  /* vh： 视窗高度的百分比（ 1vh 代表视窗的高度为 1%） */
+  height: 100vh;
+  /*  overflow 定义当一个元素的内容太大而无法适应块级格式化上下文时候该做什么 */
+  /* 隐藏 */
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  /* 初始值为：元素排列为一行 */
+  display: flex;
+  width: 90vw;
+}
+
+.panel {
+  /* 设置背景图片大小 */
+  /* cover 该背景图以它的全部宽或者高覆盖所在容器，当容器和背景图大小不同时，背景图的 左/右 或者 上/下 部分会被裁剪 */
+  background-size: cover;
+  /* 为每一个背景图片设置初始位置 */
+  background-position: center;
+  /* 定义背景图像的重复方式 */
+  background-repeat: no-repeat;
+  height: 80vh;
+  /* 外边框圆角 */
+  border-radius: 50px;
+  color: #fff;
+  /* 在鼠标指针悬停在元素上时显示相应样式 */
+  /* pointer 悬浮于连接上时，通常为手 */
+  cursor: pointer;
+  /* 设置了弹性项目如何增大或缩小以适应其弹性容器中可用的空间 （占比）*/
+  flex: 0.5;
+  margin: 10px;
+  /* 相对定位元素 */
+  position: relative;
+  -webkit-transition: all 700ms ease-in;
+}
+
+.panel h3 {
+  font-size: 24px;
+  /* 绝对定位元素 */
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  /* 不透明度 */
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+/* @media 可以针对不同的屏幕尺寸设置不同的样式，特别是如果你需要设置设计响应式的页面，@media 是非常有用的 */
+/* max-width 定义输出设备中的页面最大可见区域宽度 */
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+
+  /* nth-of-type 用于选择特定类型的子元素 */
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}

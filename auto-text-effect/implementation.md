@@ -1,0 +1,9 @@
+- 动画
+  - 改变innerText
+    - textEl.innerText = text.slice(0, idx)
+  - 改变速率
+    - setTimeout(writeText, speed)
+    - let speed = 300 / speedEl.value  speed是指循环运动周期，而不是速率
+- 监听输入的速度
+  - speedEl.addEventListener('input', (e) => speed = 300 / e.target.value)
+  - 仅仅改变speed

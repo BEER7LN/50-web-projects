@@ -1,0 +1,5 @@
+- 设置最终值
+  - data-target
+- 值变化
+  - 变化步幅:increment = target / 200
+  - 用定时器变化:setTimeout(updateCounter, 1)

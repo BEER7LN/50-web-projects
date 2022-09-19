@@ -1,0 +1,7 @@
+- 调用外部API
+  - async 构造异步函数
+  - 用axios发起请求：await axios(APIURL + 其它参数)
+- 结果在前端的显示
+  - 创建元素：createElement
+  - 设置样式：lassList.add
+  - 在DOM中加入元素appendChild

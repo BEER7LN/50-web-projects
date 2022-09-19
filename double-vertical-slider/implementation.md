@@ -1,0 +1,5 @@
+- 图片错位
+  - 实际是左侧拼接，右侧拼接，然后左侧top移位 slideLeft.style.top = `-${(slidesLength - 1) * 100}vh`
+- 切换
+  - activeSlideIndex根据按钮改变
+  - 同时改变左右侧长条top位置 slideLeft.style.transform = `translateY(${activeSlideIndex * sliderHeight}px)`

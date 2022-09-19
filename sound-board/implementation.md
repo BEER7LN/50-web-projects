@@ -1,0 +1,5 @@
+- 音乐
+  - ```<audio>```媒体
+- 音乐按钮
+  - const btn = document.createElement('button') 创建按钮
+  - 添加监听事件，播放媒体

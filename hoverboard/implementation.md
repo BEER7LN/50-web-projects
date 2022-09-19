@@ -1,0 +1,5 @@
+- 多个小方格
+  - 创建多个元素appendChild加入DOM
+- 颜色效果
+  - hover 时改变颜色并立即显色
+  - transition 延迟几秒恢复原色

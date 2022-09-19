@@ -1,0 +1,3 @@
+- 进度条
+  - 线性动画：animation: grow 10s linear infinite;
+  - 切换内容：定时器恰好和线性动画结束时间一样

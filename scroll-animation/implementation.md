@@ -1,0 +1,6 @@
+- 高度判断
+  - window.innerHeight ：视口高度
+  - Element.getBoundingClientRect().top ：元素位置距离视口顶部高度
+  - 符合要求的classList.add('show')
+- 交替左右出现
+  - .box:nth-of-type(even) ：选择器下所有偶数的元素

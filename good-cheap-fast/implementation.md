@@ -1,0 +1,5 @@
+- 手动实现多选的UI
+  - 一个圆角框border-radius: 50px; + 添加了移动动画的球ball:  animation: slideOff 0.3s linear forwards;
+  - toggle:checked
+    - 圆角框背景颜色改变
+    - .label .ball 球移动
