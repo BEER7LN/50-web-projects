@@ -1,7 +1,14 @@
 # 50 Projects in 50 Days - HTML/CSS and JavaScript
 
-This is the main repository for all of the projects in the course.
+在学习了该项目后向源代码中加入了注释和demo实现过程中的思路、重要代码，可以减少大家查阅官方文档的麻烦。
+- 建议学习人群：刚学完html,css,js，有其语法有大致了解；
+- 建议学习方式：
+  - 先看demo，自行思考该如何实现
+  - 在html中注释掉css和js，看基础dom元素
+  - 撤掉注释，学习css和js
 
+
+This is the main repository for all of the projects in the course.
 -   [Course Link](https://www.udemy.com/course/50-projects-50-days)
 -   [Course Info Website](https://50projects50days.com)
 
